@@ -6,6 +6,7 @@ Numbers come from reports/midproject_results.json and reports/midproject_errors.
 Speaker notes (Nisanur's script) are on every presented slide.
 """
 import csv
+import sys
 import json
 import statistics
 from collections import Counter
@@ -158,8 +159,10 @@ def f3(x):
     return f"{x:.3f}"
 
 
-NOTES = {}
-for i, block in enumerate((OUT / "Nisa_konusma_EN.md").read_text(encoding="utf-8").split("## Slide ")[1:], 1):
+NOTES = {}  # speaker notes only if the (private, not committed) script exists and --notes is passed
+_script = OUT / "Nisa_konusma_EN.md"
+_blocks = _script.read_text(encoding="utf-8").split("## Slide ")[1:] if ("--notes" in sys.argv and _script.exists()) else []
+for i, block in enumerate(_blocks, 1):
     NOTES[i] = block.split("\n", 1)[1].strip().replace("*", "").replace('"', "")
 
 # ── 1 research question (dark)

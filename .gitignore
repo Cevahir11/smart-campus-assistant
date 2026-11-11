@@ -10,3 +10,6 @@ scripts/sources.json
 data/gtu/
 # generated slide HTML
 presentation/slides.html
+# speaker scripts stay private
+presentation/*konusma*.md
+presentation/speaker_script*.md
