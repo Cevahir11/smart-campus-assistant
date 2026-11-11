@@ -15,7 +15,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = Path(__file__).resolve().parent
-TEAM = "Team##"  # <- put your team number here
+TEAM_NO = ""  # <- team number, e.g. "07" (also sets the file name Team07_MidProject)
+TEAM_NAME = "Syntax Error"
+TEAM = f"Team {TEAM_NO} · {TEAM_NAME}" if TEAM_NO else TEAM_NAME
+FILE_STEM = f"Team{TEAM_NO or 'XX'}_MidProject"
 MEMBERS = ["Helin Saygılı", "Nisanur Kara", "Cevahir Atıcı", "Emre Kılıç"]
 LEAD = "Nisanur Kara"  # research lead (field 10)
 REPO = "https://github.com/Cevahir11/smart-campus-assistant"
@@ -482,7 +485,7 @@ html = f"<!doctype html><html><head><meta charset=utf-8><title>{TEAM} Mid-Projec
 (OUT / "slides.html").write_text(html, encoding="utf-8")
 print("abstract words:", abstract_words, "| slides:", len(slides), "+", len(card))
 
-pdf = OUT / f"{TEAM.replace('#', 'X')}_MidProject.pdf"
+pdf = OUT / f"{FILE_STEM}.pdf"
 browsers = [r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
             r"C:\Program Files\Google\Chrome\Application\chrome.exe"]
 exe = next((b for b in browsers if Path(b).exists()), None)

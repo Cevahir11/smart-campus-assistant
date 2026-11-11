@@ -21,7 +21,10 @@ from pptx.util import Inches, Pt
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = Path(__file__).resolve().parent
-TEAM = "Team##"  # <- your team number
+TEAM_NO = ""  # <- team number, e.g. "07" (also sets the file name Team07_MidProject)
+TEAM_NAME = "Syntax Error"
+TEAM = f"Team {TEAM_NO} · {TEAM_NAME}" if TEAM_NO else TEAM_NAME
+FILE_STEM = f"Team{TEAM_NO or 'XX'}_MidProject"
 MEMBERS = "Helin Saygılı · Nisanur Kara · Cevahir Atıcı · Emre Kılıç"
 REPO = "https://github.com/Cevahir11/smart-campus-assistant"
 
@@ -157,7 +160,7 @@ def f3(x):
 
 NOTES = {}
 for i, block in enumerate((OUT / "Nisa_konusma_EN.md").read_text(encoding="utf-8").split("## Slide ")[1:], 1):
-    NOTES[i] = block.split("\n", 1)[1].strip().strip('"').replace('**', '').replace('"\n', '\n')
+    NOTES[i] = block.split("\n", 1)[1].strip().replace("*", "").replace('"', "")
 
 # ── 1 research question (dark)
 s = prs.slides.add_slide(BLANK)
@@ -458,6 +461,6 @@ for n, (title, fields) in enumerate(CARD, 1):
         y += h + 0.2
     footer(s, f"A{n}", "Project Card (graded, not presented)")
 
-out = OUT / f"{TEAM.replace('#', 'X')}_MidProject.pptx"
+out = OUT / f"{FILE_STEM}.pptx"
 prs.save(out)
 print("saved", out)
