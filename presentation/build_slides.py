@@ -18,7 +18,7 @@ OUT = Path(__file__).resolve().parent
 TEAM = "Team##"  # <- put your team number here
 MEMBERS = ["Helin Saygılı", "Nisanur Kara", "Cevahir Atıcı", "Emre Kılıç"]
 LEAD = "Nisanur Kara"  # research lead (field 10)
-REPO = "https://github.com/&lt;team&gt;/smart-campus-assistant"
+REPO = "https://github.com/Cevahir11/smart-campus-assistant"
 
 R = json.loads((ROOT / "reports" / "midproject_results.json").read_text(encoding="utf-8"))
 ERR = list(csv.DictReader(open(ROOT / "reports" / "midproject_errors.csv", encoding="utf-8")))
