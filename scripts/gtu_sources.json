@@ -1,0 +1,184 @@
+[
+ {
+  "dept": "yer-ve-deniz-bilimleri-enstitusu",
+  "name": "Yer ve Deniz Bilimleri Enstitüsü",
+  "faculty": null,
+  "page": "https://www.gtu.edu.tr/kategori/2205/3/display.aspx",
+  "announcements": "https://www.gtu.edu.tr/tr/kategori/3221/0/display.aspx"
+ },
+ {
+  "dept": "fizik",
+  "name": "Fizik",
+  "faculty": null,
+  "page": "https://www.gtu.edu.tr/kategori/562/3/fizik.aspx",
+  "announcements": "https://www.gtu.edu.tr/tr/kategori/627/0/display.aspx"
+ },
+ {
+  "dept": "kimya",
+  "name": "Kimya",
+  "faculty": null,
+  "page": "https://www.gtu.edu.tr/kategori/561/3/kimya.aspx",
+  "announcements": "https://www.gtu.edu.tr/tr/kategori/626/0/display.aspx"
+ },
+ {
+  "dept": "matematik",
+  "name": "Matematik",
+  "faculty": null,
+  "page": "https://www.gtu.edu.tr/kategori/560/3/matematik.aspx",
+  "announcements": "https://www.gtu.edu.tr/tr/kategori/578/0/display.aspx"
+ },
+ {
+  "dept": "molekuler-biyoloji-ve-genetik",
+  "name": "Moleküler Biyoloji ve Genetik",
+  "faculty": null,
+  "page": "https://www.gtu.edu.tr/kategori/563/3/molekuler-biyoloji-ve-genetik.aspx",
+  "announcements": "https://www.gtu.edu.tr/tr/kategori/628/0/display.aspx"
+ },
+ {
+  "dept": "veri-bilimi-ve-analitigi",
+  "name": "Veri Bilimi ve Analitiği",
+  "faculty": null,
+  "page": "https://www.gtu.edu.tr/kategori/6739/3/display.aspx",
+  "announcements": "https://www.gtu.edu.tr/tr/kategori/9380/0/display.aspx"
+ },
+ {
+  "dept": "ceng",
+  "name": "Bilgisayar Mühendisliği",
+  "faculty": "Mühendislik Fakültesi",
+  "page": "https://www.gtu.edu.tr/kategori/91/3/bilgisayar-muhendisligi.aspx",
+  "announcements": "https://www.gtu.edu.tr/tr/kategori/120/0/display.aspx"
+ },
+ {
+  "dept": "biyomuhendislik",
+  "name": "Biyomühendislik",
+  "faculty": null,
+  "page": "https://www.gtu.edu.tr/kategori/307/3/biyomuhendislik.aspx",
+  "announcements": "https://www.gtu.edu.tr/tr/kategori/2298/0/display.aspx"
+ },
+ {
+  "dept": "cevre-muhendisligi",
+  "name": "Çevre Mühendisliği",
+  "faculty": null,
+  "page": "https://www.gtu.edu.tr/kategori/305/3/cevre-muhendisligi.aspx",
+  "announcements": "https://www.gtu.edu.tr/tr/kategori/424/0/display.aspx"
+ },
+ {
+  "dept": "elektronik-muhendisligi",
+  "name": "Elektronik Mühendisliği",
+  "faculty": null,
+  "page": "https://www.gtu.edu.tr/kategori/301/3/elektronik-muhendisligi.aspx",
+  "announcements": "https://www.gtu.edu.tr/tr/kategori/420/0/display.aspx"
+ },
+ {
+  "dept": "endustri-muhendisligi",
+  "name": "Endüstri Mühendisliği",
+  "faculty": null,
+  "page": "https://www.gtu.edu.tr/kategori/2334/3/display.aspx",
+  "announcements": "https://www.gtu.edu.tr/tr/kategori/3218/0/display.aspx"
+ },
+ {
+  "dept": "harita-muhendisligi",
+  "name": "Harita Mühendisliği",
+  "faculty": null,
+  "page": "https://www.gtu.edu.tr/kategori/303/3/display.aspx",
+  "announcements": "https://www.gtu.edu.tr/tr/kategori/422/0/display.aspx"
+ },
+ {
+  "dept": "insaat-muhendisligi",
+  "name": "İnşaat Mühendisliği",
+  "faculty": null,
+  "page": "https://www.gtu.edu.tr/kategori/2333/3/display.aspx",
+  "announcements": "https://www.gtu.edu.tr/tr/kategori/2404/0/display.aspx"
+ },
+ {
+  "dept": "kimya-muhendisligi",
+  "name": "Kimya Mühendisliği",
+  "faculty": null,
+  "page": "https://www.gtu.edu.tr/kategori/306/3/kimya-muhendisligi.aspx",
+  "announcements": "https://www.gtu.edu.tr/tr/kategori/425/0/display.aspx"
+ },
+ {
+  "dept": "makine-muhendisligi",
+  "name": "Makine Mühendisliği",
+  "faculty": null,
+  "page": "https://www.gtu.edu.tr/kategori/302/3/makine-muhendisligi.aspx",
+  "announcements": "https://www.gtu.edu.tr/tr/kategori/421/0/display.aspx"
+ },
+ {
+  "dept": "malzeme-bilimi-ve-muhendisligi",
+  "name": "Malzeme Bilimi ve Mühendisliği",
+  "faculty": null,
+  "page": "https://www.gtu.edu.tr/kategori/304/3/malzeme-bilimi-ve-muhendisligi.aspx",
+  "announcements": "https://www.gtu.edu.tr/tr/kategori/423/0/display.aspx"
+ },
+ {
+  "dept": "mimarlik",
+  "name": "Mimarlık",
+  "faculty": null,
+  "page": "https://www.gtu.edu.tr/kategori/564/3/mimarlik.aspx",
+  "announcements": "https://www.gtu.edu.tr/tr/kategori/754/0/display.aspx"
+ },
+ {
+  "dept": "sehir-ve-bolge-planlama",
+  "name": "Şehir ve Bölge Planlama",
+  "faculty": null,
+  "page": "https://www.gtu.edu.tr/kategori/565/3/sehir-ve-bolge-planlama.aspx",
+  "announcements": "https://www.gtu.edu.tr/tr/kategori/755/0/display.aspx"
+ },
+ {
+  "dept": "endustriyel-tasarim",
+  "name": "Endüstriyel Tasarım",
+  "faculty": null,
+  "page": "https://www.gtu.edu.tr/kategori/2471/3/display.aspx",
+  "announcements": "https://www.gtu.edu.tr/tr/kategori/6792/0/display.aspx"
+ },
+ {
+  "dept": "ucak-muhendisligi-bolumu",
+  "name": "Uçak Mühendisliği Bölümü",
+  "faculty": null,
+  "page": "https://www.gtu.edu.tr/kategori/3807/3/display.aspx",
+  "announcements": "https://www.gtu.edu.tr/tr/kategori/6030/0/display.aspx"
+ },
+ {
+  "dept": "isletme",
+  "name": "İşletme",
+  "faculty": null,
+  "page": "https://www.gtu.edu.tr/kategori/566/3/display.aspx",
+  "announcements": "https://www.gtu.edu.tr/tr/kategori/849/0/display.aspx"
+ },
+ {
+  "dept": "strateji-bilimi",
+  "name": "Strateji Bilimi",
+  "faculty": null,
+  "page": "https://www.gtu.edu.tr/kategori/568/3/strateji-blimi.aspx",
+  "announcements": "https://www.gtu.edu.tr/tr/kategori/4842/0/display.aspx"
+ },
+ {
+  "dept": "yonetim-bilisim-sistemleri",
+  "name": "Yönetim Bilişim Sistemleri",
+  "faculty": null,
+  "page": "https://www.gtu.edu.tr/kategori/3822/3/display.aspx",
+  "announcements": "https://www.gtu.edu.tr/tr/kategori/4780/0/display.aspx"
+ },
+ {
+  "dept": "beden-egitimi-ve-spor-bolumu",
+  "name": "Beden Eğitimi ve Spor Bölümü",
+  "faculty": null,
+  "page": "https://www.gtu.edu.tr/kategori/51/3/beden-egitimi-ve-spor-bolumu.aspx",
+  "announcements": "https://www.gtu.edu.tr/tr/kategori/2759/0/display.aspx"
+ },
+ {
+  "dept": "turkce-hazirlik-bolumu",
+  "name": "Türkçe Hazırlık Bölümü",
+  "faculty": null,
+  "page": "https://www.gtu.edu.tr/kategori/50/3/turkce-bolumu.aspx",
+  "announcements": "https://www.gtu.edu.tr/tr/kategori/2726/0/display.aspx"
+ },
+ {
+  "dept": "yabanci-diller-bolumu",
+  "name": "Yabancı Diller Bölümü",
+  "faculty": null,
+  "page": "https://www.gtu.edu.tr/kategori/48/3/yabanci-diller-bolumu.aspx",
+  "announcements": "https://www.gtu.edu.tr/tr/kategori/1411/0/display.aspx"
+ }
+]

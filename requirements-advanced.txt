@@ -1,0 +1,9 @@
+# Optional: transformer models (BERTurk / XLM-R / mT5) and the Claude LLM mode
+-r requirements.txt
+torch>=2.1
+transformers>=4.44
+datasets>=2.19
+sentencepiece>=0.2
+protobuf>=4.25
+accelerate>=0.30
+anthropic>=0.70

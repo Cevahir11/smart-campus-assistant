@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+models/
+reports/results.json
+data/user_announcements.jsonl
+data/raw_announcements.jsonl
+scripts/sources.json
+# GTÜ announcement texts are © GTÜ: share only the collector + URLs/labels (re-create with gtu_tum_bolumler_cek.bat)
+data/gtu/
+# generated slide HTML
+presentation/slides.html

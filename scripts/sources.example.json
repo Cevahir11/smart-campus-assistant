@@ -1,0 +1,5 @@
+[
+  {"name": "ornek-rss", "type": "rss", "url": "https://www.example.edu.tr/duyurular/rss", "source_type": "university_website"},
+  {"name": "ornek-bolum", "type": "html", "url": "https://ceng.example.edu.tr/duyurular",
+   "item_selector_regex": "<a[^>]+href=\"(/duyuru/[^\"]+)\"[^>]*>(.*?)</a>", "source_type": "department_website"}
+]

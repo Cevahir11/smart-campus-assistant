@@ -1,0 +1,969 @@
+{
+ "split": {
+  "train": 252,
+  "dev": 84,
+  "test": 84,
+  "challenge": 24
+ },
+ "protocol": {
+  "split_seed": 2026,
+  "bootstrap": 1000,
+  "bootstrap_seed": 0,
+  "min_real_diff_macro_f1": 0.03
+ },
+ "baselines": {
+  "majority": {
+   "dev": {
+    "accuracy": 0.2143,
+    "macro_f1": 0.0588,
+    "n": 84,
+    "f1_ci": [
+     0.039,
+     0.079
+    ],
+    "acc_ci": [
+     0.131,
+     0.31
+    ]
+   },
+   "test": {
+    "accuracy": 0.2143,
+    "macro_f1": 0.0588,
+    "n": 84,
+    "f1_ci": [
+     0.039,
+     0.079
+    ],
+    "acc_ci": [
+     0.131,
+     0.31
+    ]
+   },
+   "challenge": {
+    "accuracy": 0.1667,
+    "macro_f1": 0.0476,
+    "n": 24,
+    "f1_ci": [
+     0.013,
+     0.09
+    ],
+    "acc_ci": [
+     0.042,
+     0.333
+    ]
+   }
+  },
+  "keyword_rules": {
+   "dev": {
+    "accuracy": 0.8571,
+    "macro_f1": 0.8506,
+    "n": 84,
+    "f1_ci": [
+     0.755,
+     0.918
+    ],
+    "acc_ci": [
+     0.786,
+     0.929
+    ]
+   },
+   "test": {
+    "accuracy": 0.8571,
+    "macro_f1": 0.8401,
+    "n": 84,
+    "f1_ci": [
+     0.758,
+     0.911
+    ],
+    "acc_ci": [
+     0.774,
+     0.929
+    ]
+   },
+   "challenge": {
+    "accuracy": 0.7917,
+    "macro_f1": 0.801,
+    "n": 24,
+    "f1_ci": [
+     0.605,
+     0.935
+    ],
+    "acc_ci": [
+     0.625,
+     0.958
+    ]
+   }
+  },
+  "tfidf_nb": {
+   "dev": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "n": 84,
+    "f1_ci": [
+     1.0,
+     1.0
+    ],
+    "acc_ci": [
+     1.0,
+     1.0
+    ]
+   },
+   "test": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "n": 84,
+    "f1_ci": [
+     1.0,
+     1.0
+    ],
+    "acc_ci": [
+     1.0,
+     1.0
+    ]
+   },
+   "challenge": {
+    "accuracy": 0.7917,
+    "macro_f1": 0.7894,
+    "n": 24,
+    "f1_ci": [
+     0.565,
+     0.935
+    ],
+    "acc_ci": [
+     0.625,
+     0.958
+    ]
+   }
+  },
+  "tfidf_svm": {
+   "dev": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "n": 84,
+    "f1_ci": [
+     1.0,
+     1.0
+    ],
+    "acc_ci": [
+     1.0,
+     1.0
+    ]
+   },
+   "test": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "n": 84,
+    "f1_ci": [
+     1.0,
+     1.0
+    ],
+    "acc_ci": [
+     1.0,
+     1.0
+    ]
+   },
+   "challenge": {
+    "accuracy": 0.875,
+    "macro_f1": 0.8737,
+    "n": 24,
+    "f1_ci": [
+     0.684,
+     1.0
+    ],
+    "acc_ci": [
+     0.75,
+     1.0
+    ]
+   }
+  },
+  "tfidf_logreg": {
+   "dev": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "n": 84,
+    "f1_ci": [
+     1.0,
+     1.0
+    ],
+    "acc_ci": [
+     1.0,
+     1.0
+    ]
+   },
+   "test": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "n": 84,
+    "f1_ci": [
+     1.0,
+     1.0
+    ],
+    "acc_ci": [
+     1.0,
+     1.0
+    ]
+   },
+   "challenge": {
+    "accuracy": 0.875,
+    "macro_f1": 0.8737,
+    "n": 24,
+    "f1_ci": [
+     0.684,
+     1.0
+    ],
+    "acc_ci": [
+     0.75,
+     1.0
+    ]
+   }
+  }
+ },
+ "errors": [
+  {
+   "model": "keyword_rules",
+   "set": "dev",
+   "id": "ann-0361",
+   "lang": "tr",
+   "gold": "event",
+   "pred": "exam",
+   "title": "Satranç Kulübü - Doğa Yürüyüşü",
+   "text": "Sınav haftası öncesi moral ve motivasyon için Doğa Yürüyüşü düzenliyoruz. Tarih: 17/11/2026, Saat: 15:00, Yer: Amfi 1. Tüm öğrenciler davetlidir."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "dev",
+   "id": "ann-0205",
+   "lang": "tr",
+   "gold": "room_change",
+   "pred": "exam",
+   "title": "CENG 213 sınav salonu değişti",
+   "text": "27 Kasım 2026 tarihinde yapılacak CENG 213 mazeret sınavı Kütüphane Seminer Salonu yerine Kültür Merkezi salonunda yapılacaktır. Sınav saati (09:00) değişmemiştir. Tüm öğrencilerimize başarılar dileriz."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "dev",
+   "id": "ann-0157",
+   "lang": "en",
+   "gold": "room_change",
+   "pred": "exam",
+   "title": "INS 201 exam room changed",
+   "text": "The INS 201 make-up exam on November 1, 2026 has been moved from B-204 to B-310. The time (10:00) is unchanged. Do not forget to bring your student ID card."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "dev",
+   "id": "ann-0120",
+   "lang": "tr",
+   "gold": "room_change",
+   "pred": "exam",
+   "title": "MAT 102 sınav salonu değişti",
+   "text": "9 Kasım 2026 Pazartesi tarihinde yapılacak MAT 102 bütünleme sınavı Konferans Salonu yerine E-205 salonunda yapılacaktır. Sınav saati (14:15) değişmemiştir. Detaylı bilgi için bölüm sekreterliği ile iletişime geçebilirsiniz."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "dev",
+   "id": "ann-0217",
+   "lang": "tr",
+   "gold": "room_change",
+   "pred": "exam",
+   "title": "FIZ 102 sınav salonu değişti",
+   "text": "25.11.2026 tarihinde yapılacak FIZ 102 bütünleme sınavı D-110 yerine E-205 salonunda yapılacaktır. Sınav saati (16:00) değişmemiştir."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "dev",
+   "id": "ann-0406",
+   "lang": "en",
+   "gold": "room_change",
+   "pred": "exam",
+   "title": "MAK 312 exam room changed",
+   "text": "The MAK 312 quiz on November 30, 2026 has been moved from B-204 to A-215. The time (09:30) is unchanged. Updates will be posted on the department website."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "dev",
+   "id": "ann-0219",
+   "lang": "tr",
+   "gold": "room_change",
+   "pred": "exam",
+   "title": "MAT 101 sınav salonu değişti",
+   "text": "24 Kasım 2026 tarihinde yapılacak MAT 101 bütünleme sınavı E-205 yerine Amfi 5 salonunda yapılacaktır. Sınav saati (13:30) değişmemiştir."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "dev",
+   "id": "ann-0017",
+   "lang": "tr",
+   "gold": "registration",
+   "pred": "scholarship",
+   "title": "Çift anadal başvuruları takvimi",
+   "text": "Akademik takvim gereği çift anadal başvuruları 18.11.2026 - 22.11.2026 tarihleri arasında yapılacaktır. Süresi içinde işlem yapmayan öğrencilerin başvuruları kabul edilmeyecektir."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "dev",
+   "id": "ann-0033",
+   "lang": "en",
+   "gold": "registration",
+   "pred": "exam",
+   "title": "double major applications schedule",
+   "text": "The double major applications period starts on November 18, 2026 and ends on November 22, 2026. All steps are completed through the student information system. Please contact the department office for further information."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "dev",
+   "id": "ann-0220",
+   "lang": "tr",
+   "gold": "registration",
+   "pred": "scholarship",
+   "title": "Öğrenci işleri: muafiyet başvuruları",
+   "text": "Öğrenci İşleri Daire Başkanlığı'nın duyurusudur: muafiyet başvuruları 2 Kasım 2026 Pazartesi ile 6 Kasım tarihleri arasında gerçekleştirilecektir. Bu tarihlerde sınav yapılmayacaktır. Lütfen e-posta kutunuzu düzenli olarak kontrol ediniz."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "dev",
+   "id": "ann-0417",
+   "lang": "en",
+   "gold": "registration",
+   "pred": "exam",
+   "title": "exemption applications schedule",
+   "text": "The exemption applications period starts on November 2, 2026 and ends on Friday, November 6. All steps are completed through the student information system. Do not forget to bring your student ID card."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "dev",
+   "id": "ann-0130",
+   "lang": "tr",
+   "gold": "registration",
+   "pred": "scholarship",
+   "title": "Çift anadal başvuruları takvimi",
+   "text": "Akademik takvim gereği çift anadal başvuruları 18.11.2026 - 22 Kasım 2026 Pazar tarihleri arasında yapılacaktır. Süresi içinde işlem yapmayan öğrencilerin başvuruları kabul edilmeyecektir. Duyuru ilgili tüm öğrencilere önemle duyurulur."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "challenge",
+   "id": "ch-005",
+   "lang": "tr",
+   "gold": "event",
+   "pred": "exam",
+   "title": "Yapay Zeka Kulübü tanışma toplantısı",
+   "text": "Yeni dönem tanışma toplantımız 18 Kasım Çarşamba akşamı 18:00'de Mühendislik Fakültesi Z-05 salonunda! Pizza bizden 🍕"
+  },
+  {
+   "model": "keyword_rules",
+   "set": "challenge",
+   "id": "ch-008",
+   "lang": "en",
+   "gold": "event",
+   "pred": "exam",
+   "title": "Guest lecture: LLMs in Turkish",
+   "text": "Join our guest lecture on large language models for Turkish on Dec 3 at 4 pm in Conference Hall. Everyone is welcome."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "challenge",
+   "id": "ch-018",
+   "lang": "tr",
+   "gold": "room_change",
+   "pred": "exam",
+   "title": "Sınav yeri değişikliği!!",
+   "text": "DİKKAT: 21 Kasım'daki MAT101 sınavı Amfi 1 yerine Spor Salonu'nda yapılacak."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "challenge",
+   "id": "ch-020",
+   "lang": "tr",
+   "gold": "room_change",
+   "pred": "exam",
+   "title": "Derslik güncellemesi - PSI 101",
+   "text": "PSI 101 dersimiz kalabalık nedeniyle bu haftadan itibaren Kongre Merkezi büyük salonda yapılacaktır."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "challenge",
+   "id": "ch-021",
+   "lang": "tr",
+   "gold": "registration",
+   "pred": "exam",
+   "title": "Ekle-sil haftası",
+   "text": "Ders ekle-sil işlemleri 23-27 Kasım tarihleri arasında OBS üzerinden yapılabilecektir. Danışman onayları 28 Kasım saat 23:59'a kadar tamamlanmalıdır."
+  },
+  {
+   "model": "tfidf_logreg",
+   "set": "challenge",
+   "id": "ch-008",
+   "lang": "en",
+   "gold": "event",
+   "pred": "cancellation",
+   "title": "Guest lecture: LLMs in Turkish",
+   "text": "Join our guest lecture on large language models for Turkish on Dec 3 at 4 pm in Conference Hall. Everyone is welcome."
+  },
+  {
+   "model": "tfidf_logreg",
+   "set": "challenge",
+   "id": "ch-012",
+   "lang": "en",
+   "gold": "scholarship",
+   "pred": "exam",
+   "title": "Scholarship for international students",
+   "text": "International students may apply for the tuition waiver until November 30, 2026. Interviews will be held in Room A-301."
+  },
+  {
+   "model": "tfidf_logreg",
+   "set": "challenge",
+   "id": "ch-023",
+   "lang": "tr",
+   "gold": "registration",
+   "pred": "scholarship",
+   "title": "Mezuniyet için gerekli belgeler",
+   "text": "Mezuniyet aşamasındaki öğrencilerin ilişik kesme formlarını 10 Ocak 2027'ye kadar bölüm sekreterliğine teslim etmeleri gerekmektedir."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0051",
+   "lang": "en",
+   "gold": "event",
+   "pred": "exam",
+   "title": "Chess Tournament",
+   "text": "Don't miss Chess Tournament! It will take place on Saturday, November 21, 10:15, at Amfi 1. Register on the club page. Please contact the department office for further information."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0265",
+   "lang": "en",
+   "gold": "event",
+   "pred": "exam",
+   "title": "Science Fair",
+   "text": "Don't miss Science Fair! It will take place on 16 November 2026, 15:00, at Kültür Merkezi. Register on the club page. Please contact the department office for further information."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0148",
+   "lang": "en",
+   "gold": "event",
+   "pred": "exam",
+   "title": "Film Screening",
+   "text": "Don't miss Film Screening! It will take place on Monday, November 16, 12:00, at Konferans Salonu. Register on the club page. Please contact the department office for further information."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0324",
+   "lang": "en",
+   "gold": "event",
+   "pred": "exam",
+   "title": "Photography Exhibition",
+   "text": "Don't miss Photography Exhibition! It will take place on Thursday, November 26, 12:00, at Kültür Merkezi. Register on the club page. Please contact the department office for further information."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0040",
+   "lang": "tr",
+   "gold": "event",
+   "pred": "exam",
+   "title": "Satranç Kulübü - Tiyatro Gösterisi",
+   "text": "Sınav haftası öncesi moral ve motivasyon için Tiyatro Gösterisi düzenliyoruz. Tarih: 7 Kasım 2026, Saat: 14:00, Yer: Konferans Salonu. Tüm öğrenciler davetlidir."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0013",
+   "lang": "en",
+   "gold": "event",
+   "pred": "exam",
+   "title": "Science Fair",
+   "text": "Don't miss Science Fair! It will take place on 16 November 2026, 15:00, at Kültür Merkezi. Register on the club page. We wish all students success."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0318",
+   "lang": "tr",
+   "gold": "event",
+   "pred": "exam",
+   "title": "Kariyer Merkezi - Kan Bağışı Kampanyası",
+   "text": "Sınav haftası öncesi moral ve motivasyon için Kan Bağışı Kampanyası düzenliyoruz. Tarih: 18.11.2026, Saat: 13:00, Yer: Amfi 1. Tüm öğrenciler davetlidir."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0283",
+   "lang": "en",
+   "gold": "cancellation",
+   "pred": "exam",
+   "title": "No CENG 351 lecture",
+   "text": "Please note that there will be no CENG 351 lecture on 12 November 2026 due to a conference."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0249",
+   "lang": "en",
+   "gold": "cancellation",
+   "pred": "exam",
+   "title": "No CENG 442 lecture",
+   "text": "Please note that there will be no CENG 442 lecture on Friday, November 13 due to a conference. Please contact the department office for further information."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0194",
+   "lang": "tr",
+   "gold": "room_change",
+   "pred": "exam",
+   "title": "CENG 140 sınav salonu değişti",
+   "text": "8 Kasım 2026 tarihinde yapılacak CENG 140 quiz D Blok 105 yerine Kongre Merkezi salonunda yapılacaktır. Sınav saati (16:30) değişmemiştir. Detaylı bilgi için bölüm sekreterliği ile iletişime geçebilirsiniz."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0135",
+   "lang": "tr",
+   "gold": "room_change",
+   "pred": "event",
+   "title": "Veritabanı Sistemleri ders yeri",
+   "text": "Kapasite nedeniyle CENG 301 dersi 17.11.2026 itibarıyla Kütüphane Seminer Salonu dersliğinden D Blok 105 dersliğine taşınmıştır. Detaylı bilgi için bölüm sekreterliği ile iletişime geçebilirsiniz."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0190",
+   "lang": "tr",
+   "gold": "room_change",
+   "pred": "exam",
+   "title": "TDL 101 sınav salonu değişti",
+   "text": "29 Kasım 2026 tarihinde yapılacak TDL 101 ara sınavı Kültür Merkezi yerine Konferans Salonu salonunda yapılacaktır. Sınav saati (12:00) değişmemiştir. Duyuru ilgili tüm öğrencilere önemle duyurulur."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0024",
+   "lang": "tr",
+   "gold": "room_change",
+   "pred": "event",
+   "title": "Atatürk İlkeleri ve İnkılap Tarihi II ders yeri",
+   "text": "Kapasite nedeniyle ATA 102 dersi 17.11.2026 itibarıyla Amfi 5 dersliğinden Kütüphane Seminer Salonu dersliğine taşınmıştır."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0027",
+   "lang": "tr",
+   "gold": "room_change",
+   "pred": "exam",
+   "title": "EEE 211 sınav salonu değişti",
+   "text": "14.11.2026 tarihinde yapılacak EEE 211 bütünleme sınavı A-215 yerine Amfi 1 salonunda yapılacaktır. Sınav saati (13:00) değişmemiştir."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0334",
+   "lang": "tr",
+   "gold": "room_change",
+   "pred": "exam",
+   "title": "MAT 345 sınav salonu değişti",
+   "text": "31.10.2026 tarihinde yapılacak MAT 345 bütünleme sınavı Konferans Salonu yerine B-310 salonunda yapılacaktır. Sınav saati (15:30) değişmemiştir."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0166",
+   "lang": "tr",
+   "gold": "room_change",
+   "pred": "exam",
+   "title": "ISL 201 sınav salonu değişti",
+   "text": "29 Kasım 2026 Pazar tarihinde yapılacak ISL 201 ara sınavı Kütüphane Seminer Salonu yerine D Blok 105 salonunda yapılacaktır. Sınav saati (16:00) değişmemiştir."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0315",
+   "lang": "en",
+   "gold": "room_change",
+   "pred": "exam",
+   "title": "CENG 315 exam room changed",
+   "text": "The CENG 315 midterm exam on Monday, November 16 has been moved from E-205 to Kütüphane Seminer Salonu. The time (16:15) is unchanged. We wish all students success."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0164",
+   "lang": "tr",
+   "gold": "room_change",
+   "pred": "exam",
+   "title": "CENG 499 sınav salonu değişti",
+   "text": "8 Kasım tarihinde yapılacak CENG 499 bütünleme sınavı Amfi 3 yerine D-110 salonunda yapılacaktır. Sınav saati (10:00) değişmemiştir."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0154",
+   "lang": "tr",
+   "gold": "room_change",
+   "pred": "exam",
+   "title": "CENG442 sınav salonu değişti",
+   "text": "31.10.2026 tarihinde yapılacak CENG442 bütünleme sınavı Konferans Salonu yerine Z-12 salonunda yapılacaktır. Sınav saati (11:15) değişmemiştir. Duyuru ilgili tüm öğrencilere önemle duyurulur."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0255",
+   "lang": "tr",
+   "gold": "room_change",
+   "pred": "exam",
+   "title": "PSI 101 sınav salonu değişti",
+   "text": "3 Kasım 2026 Salı tarihinde yapılacak PSI 101 ara sınavı Amfi 1 yerine A-215 salonunda yapılacaktır. Sınav saati (13:00) değişmemiştir."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0359",
+   "lang": "en",
+   "gold": "room_change",
+   "pred": "exam",
+   "title": "END 211 exam room changed",
+   "text": "The END 211 make-up exam on 2 November 2026 has been moved from D-110 to C-012. The time (10:45) is unchanged. We wish all students success."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0278",
+   "lang": "tr",
+   "gold": "room_change",
+   "pred": "exam",
+   "title": "CENG301 sınav salonu değişti",
+   "text": "30 Ekim 2026 tarihinde yapılacak CENG301 mazeret sınavı E-205 yerine A-215 salonunda yapılacaktır. Sınav saati (15:30) değişmemiştir. Güncellemeler bölüm web sayfasından takip edilebilir."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0330",
+   "lang": "tr",
+   "gold": "room_change",
+   "pred": "exam",
+   "title": "ISL 312 sınav salonu değişti",
+   "text": "23 Kasım 2026 Pazartesi tarihinde yapılacak ISL 312 final sınavı Amfi 3 yerine D Blok 105 salonunda yapılacaktır. Sınav saati (14:45) değişmemiştir. Detaylı bilgi için bölüm sekreterliği ile iletişime geçebilirsiniz."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0127",
+   "lang": "tr",
+   "gold": "room_change",
+   "pred": "exam",
+   "title": "END305 sınav salonu değişti",
+   "text": "23 Kasım 2026 Pazartesi tarihinde yapılacak END305 bütünleme sınavı Konferans Salonu yerine C-012 salonunda yapılacaktır. Sınav saati (10:00) değişmemiştir."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0009",
+   "lang": "tr",
+   "gold": "room_change",
+   "pred": "exam",
+   "title": "FIZ 102 sınav salonu değişti",
+   "text": "11 Kasım tarihinde yapılacak FIZ 102 final sınavı C Blok 204 yerine B-204 salonunda yapılacaktır. Sınav saati (15:15) değişmemiştir."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0206",
+   "lang": "tr",
+   "gold": "registration",
+   "pred": "scholarship",
+   "title": "Öğrenci işleri: mezuniyet başvuruları",
+   "text": "Öğrenci İşleri Daire Başkanlığı'nın duyurusudur: mezuniyet başvuruları 24 Kasım 2026 ile 28 Kasım 2026 Cumartesi tarihleri arasında gerçekleştirilecektir. Bu tarihlerde sınav yapılmayacaktır. Sorularınız için öğrenci işleri daire başkanlığına başvurabilirsiniz."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0139",
+   "lang": "tr",
+   "gold": "registration",
+   "pred": "scholarship",
+   "title": "Muafiyet başvuruları",
+   "text": "Muafiyet başvuruları 2 Kasım 2026 tarihinde saat 09.00 itibarıyla başlayacaktır. Sistem yoğunluğu nedeniyle işlemlerinizi erken yapmanız önerilir. Lütfen e-posta kutunuzu düzenli olarak kontrol ediniz."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0298",
+   "lang": "en",
+   "gold": "registration",
+   "pred": "exam",
+   "title": "English proficiency exam applications schedule",
+   "text": "The English proficiency exam applications period starts on November 1, 2026 and ends on 5 November 2026. All steps are completed through the student information system. We wish all students success."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0218",
+   "lang": "tr",
+   "gold": "registration",
+   "pred": "scholarship",
+   "title": "Danışman onayları takvimi",
+   "text": "Akademik takvim gereği danışman onayları 12 Kasım 2026 - 16 Kasım 2026 tarihleri arasında yapılacaktır. Süresi içinde işlem yapmayan öğrencilerin başvuruları kabul edilmeyecektir. Lütfen e-posta kutunuzu düzenli olarak kontrol ediniz."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0375",
+   "lang": "tr",
+   "gold": "registration",
+   "pred": "exam",
+   "title": "Öğrenci işleri: İngilizce hazırlık muafiyet sınavı başvuruları",
+   "text": "Öğrenci İşleri Daire Başkanlığı'nın duyurusudur: İngilizce hazırlık muafiyet sınavı başvuruları 1 Kasım 2026 Pazar ile 5 Kasım 2026 tarihleri arasında gerçekleştirilecektir. Bu tarihlerde sınav yapılmayacaktır."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0149",
+   "lang": "tr",
+   "gold": "registration",
+   "pred": "exam",
+   "title": "Danışman onayları",
+   "text": "Danışman onayları 12 Kasım 2026 tarihinde saat 09:00 itibarıyla başlayacaktır. Sistem yoğunluğu nedeniyle işlemlerinizi erken yapmanız önerilir."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0136",
+   "lang": "tr",
+   "gold": "registration",
+   "pred": "exam",
+   "title": "Öğrenci işleri: İngilizce hazırlık muafiyet sınavı başvuruları",
+   "text": "Öğrenci İşleri Daire Başkanlığı'nın duyurusudur: İngilizce hazırlık muafiyet sınavı başvuruları 1 Kasım 2026 Pazar ile 05.11.2026 tarihleri arasında gerçekleştirilecektir. Bu tarihlerde sınav yapılmayacaktır."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0153",
+   "lang": "tr",
+   "gold": "registration",
+   "pred": "scholarship",
+   "title": "Muafiyet başvuruları takvimi",
+   "text": "Akademik takvim gereği muafiyet başvuruları 02.11.2026 - 06/11/2026 tarihleri arasında yapılacaktır. Süresi içinde işlem yapmayan öğrencilerin başvuruları kabul edilmeyecektir."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0196",
+   "lang": "en",
+   "gold": "registration",
+   "pred": "exam",
+   "title": "Reminder: exemption applications",
+   "text": "The last day for exemption applications is November 2, 2026. Advisor approval is required."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0152",
+   "lang": "tr",
+   "gold": "registration",
+   "pred": "exam",
+   "title": "Öğrenci işleri: danışman onayları",
+   "text": "Öğrenci İşleri Daire Başkanlığı'nın duyurusudur: danışman onayları 12.11.2026 ile 16 Kasım 2026 tarihleri arasında gerçekleştirilecektir. Bu tarihlerde sınav yapılmayacaktır."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0276",
+   "lang": "tr",
+   "gold": "registration",
+   "pred": "scholarship",
+   "title": "Mezuniyet başvuruları",
+   "text": "Mezuniyet başvuruları 24.11.2026 tarihinde saat 09.00 itibarıyla başlayacaktır. Sistem yoğunluğu nedeniyle işlemlerinizi erken yapmanız önerilir. Öğrenci kimlik kartınızı yanınızda bulundurmayı unutmayınız."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0168",
+   "lang": "tr",
+   "gold": "registration",
+   "pred": "scholarship",
+   "title": "Öğrenci işleri: muafiyet başvuruları",
+   "text": "Öğrenci İşleri Daire Başkanlığı'nın duyurusudur: muafiyet başvuruları 2 Kasım ile 6 Kasım 2026 tarihleri arasında gerçekleştirilecektir. Bu tarihlerde sınav yapılmayacaktır. Detaylı bilgi için bölüm sekreterliği ile iletişime geçebilirsiniz."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0409",
+   "lang": "en",
+   "gold": "registration",
+   "pred": "exam",
+   "title": "Reminder: English proficiency exam applications",
+   "text": "The last day for English proficiency exam applications is Sunday, November 1. Advisor approval is required. We wish all students success."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0279",
+   "lang": "tr",
+   "gold": "registration",
+   "pred": "scholarship",
+   "title": "Mezuniyet başvuruları",
+   "text": "Mezuniyet başvuruları 24 Kasım 2026 Salı tarihinde saat 09:00 itibarıyla başlayacaktır. Sistem yoğunluğu nedeniyle işlemlerinizi erken yapmanız önerilir. Öğrenci kimlik kartınızı yanınızda bulundurmayı unutmayınız."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0270",
+   "lang": "tr",
+   "gold": "registration",
+   "pred": "scholarship",
+   "title": "Öğrenci işleri: mezuniyet başvuruları",
+   "text": "Öğrenci İşleri Daire Başkanlığı'nın duyurusudur: mezuniyet başvuruları 24.11.2026 ile 28 Kasım 2026 Cumartesi tarihleri arasında gerçekleştirilecektir. Bu tarihlerde sınav yapılmayacaktır."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0229",
+   "lang": "en",
+   "gold": "registration",
+   "pred": "exam",
+   "title": "Reminder: minor applications",
+   "text": "The last day for minor applications is Saturday, November 7. Advisor approval is required."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0263",
+   "lang": "tr",
+   "gold": "registration",
+   "pred": "scholarship",
+   "title": "Çift anadal başvuruları",
+   "text": "Çift anadal başvuruları 18 Kasım 2026 Çarşamba tarihinde saat 09:00 itibarıyla başlayacaktır. Sistem yoğunluğu nedeniyle işlemlerinizi erken yapmanız önerilir. Duyuru ilgili tüm öğrencilere önemle duyurulur."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0277",
+   "lang": "tr",
+   "gold": "registration",
+   "pred": "exam",
+   "title": "Mazeret sınavı başvuruları",
+   "text": "Mazeret sınavı başvuruları 30/11/2026 tarihinde saat 09:00 itibarıyla başlayacaktır. Sistem yoğunluğu nedeniyle işlemlerinizi erken yapmanız önerilir. Öğrenci kimlik kartınızı yanınızda bulundurmayı unutmayınız."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0115",
+   "lang": "en",
+   "gold": "registration",
+   "pred": "exam",
+   "title": "English proficiency exam applications schedule",
+   "text": "The English proficiency exam applications period starts on November 1, 2026 and ends on 5 November 2026. All steps are completed through the student information system."
+  },
+  {
+   "model": "keyword_rules",
+   "set": "train",
+   "id": "ann-0187",
+   "lang": "tr",
+   "gold": "registration",
+   "pred": "scholarship",
+   "title": "Öğrenci işleri: muafiyet başvuruları",
+   "text": "Öğrenci İşleri Daire Başkanlığı'nın duyurusudur: muafiyet başvuruları 2 Kasım 2026 Pazartesi ile 06.11.2026 tarihleri arasında gerçekleştirilecektir. Bu tarihlerde sınav yapılmayacaktır. Duyuru ilgili tüm öğrencilere önemle duyurulur."
+  },
+  {
+   "model": "rule_extractor",
+   "set": "challenge",
+   "id": "ch-004",
+   "lang": "tr",
+   "gold": "LOCATION=fen fakültesi amfileri",
+   "pred": "missed",
+   "title": "Fizik II ara sınav salon listesi",
+   "text": "FIZ 102 ara sınavı 24 Kasım 2026 Salı 17.30'da Fen Fakültesi amfilerinde yapılacaktır. Salon dağılım listesi ektedir."
+  },
+  {
+   "model": "rule_extractor",
+   "set": "challenge",
+   "id": "ch-004",
+   "lang": "tr",
+   "gold": "TIME=17:30",
+   "pred": "missed",
+   "title": "Fizik II ara sınav salon listesi",
+   "text": "FIZ 102 ara sınavı 24 Kasım 2026 Salı 17.30'da Fen Fakültesi amfilerinde yapılacaktır. Salon dağılım listesi ektedir."
+  },
+  {
+   "model": "rule_extractor",
+   "set": "challenge",
+   "id": "ch-007",
+   "lang": "tr",
+   "gold": "DATE=2027-05-15",
+   "pred": "missed",
+   "title": "Bahar Şenliği konser programı",
+   "text": "Bahar şenliği kapsamında konserler 15-17 Mayıs tarihlerinde Kampüs Açık Hava Tiyatrosu'nda gerçekleşecek."
+  },
+  {
+   "model": "rule_extractor",
+   "set": "challenge",
+   "id": "ch-007",
+   "lang": "tr",
+   "gold": "DATE=2027-05-17",
+   "pred": "missed",
+   "title": "Bahar Şenliği konser programı",
+   "text": "Bahar şenliği kapsamında konserler 15-17 Mayıs tarihlerinde Kampüs Açık Hava Tiyatrosu'nda gerçekleşecek."
+  },
+  {
+   "model": "rule_extractor",
+   "set": "challenge",
+   "id": "ch-007",
+   "lang": "tr",
+   "gold": "LOCATION=kampüs açık hava tiyatrosu",
+   "pred": "missed",
+   "title": "Bahar Şenliği konser programı",
+   "text": "Bahar şenliği kapsamında konserler 15-17 Mayıs tarihlerinde Kampüs Açık Hava Tiyatrosu'nda gerçekleşecek."
+  },
+  {
+   "model": "rule_extractor",
+   "set": "challenge",
+   "id": "ch-007",
+   "lang": "tr",
+   "gold": "none",
+   "pred": "DATE=2026-05-15",
+   "title": "Bahar Şenliği konser programı",
+   "text": "Bahar şenliği kapsamında konserler 15-17 Mayıs tarihlerinde Kampüs Açık Hava Tiyatrosu'nda gerçekleşecek."
+  },
+  {
+   "model": "rule_extractor",
+   "set": "challenge",
+   "id": "ch-007",
+   "lang": "tr",
+   "gold": "none",
+   "pred": "DATE=2026-05-17",
+   "title": "Bahar Şenliği konser programı",
+   "text": "Bahar şenliği kapsamında konserler 15-17 Mayıs tarihlerinde Kampüs Açık Hava Tiyatrosu'nda gerçekleşecek."
+  }
+ ],
+ "berturk_dev": [
+  {
+   "seed": 13,
+   "accuracy": 0.929,
+   "macro_f1": 0.918,
+   "minutes": 5.8,
+   "errors": [],
+   "note": "restored from run log of 2026-11-11 (per-item errors not kept)"
+  },
+  {
+   "seed": 42,
+   "accuracy": 0.702,
+   "macro_f1": 0.618,
+   "minutes": 5.9,
+   "errors": [],
+   "note": "restored from run log of 2026-11-11 (per-item errors not kept)"
+  },
+  {
+   "seed": 2026,
+   "accuracy": 0.893,
+   "macro_f1": 0.885,
+   "minutes": 5.7,
+   "errors": [],
+   "note": "restored from run log of 2026-11-11 (per-item errors not kept)"
+  }
+ ]
+}

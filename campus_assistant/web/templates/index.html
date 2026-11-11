@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Akıllı Kampüs Duyuru Asistanı</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <span class="logo">🎓</span>
+    <div>
+      <h1>Akıllı Kampüs Duyuru Asistanı</h1>
+      <p class="sub">Smart Campus Announcement Assistant · NLP ile yapılandırılmış duyurular ve soru-cevap</p>
+    </div>
+  </div>
+  <div class="meta" id="meta">yükleniyor…</div>
+</header>
+
+<main class="layout">
+  <!-- Chat -->
+  <section class="panel chat">
+    <div class="panel-head">
+      <h2>Asistana sor</h2>
+      <label class="mode" title="Claude ile kaynaklı cevap (ANTHROPIC_API_KEY gerekir)">
+        <input type="checkbox" id="llmMode" disabled> LLM modu
+      </label>
+    </div>
+    <div id="messages" class="messages">
+      <div class="msg bot">Merhaba! Duyurular hakkında soru sorabilirsin. Örneğin:
+        <div class="chips" id="examples"></div>
+      </div>
+    </div>
+    <form id="askForm" class="ask">
+      <input id="question" autocomplete="off" placeholder="Bu hafta sınav var mı?">
+      <button type="submit">Sor</button>
+    </form>
+  </section>
+
+  <!-- Feed -->
+  <section class="panel feed">
+    <div class="panel-head">
+      <h2>Duyurular</h2>
+      <div class="feed-tools">
+        <input id="search" placeholder="Ara…">
+        <label><input type="checkbox" id="upcoming"> Yaklaşanlar</label>
+        <button id="openAdd" class="secondary">+ Duyuru ekle</button>
+      </div>
+    </div>
+    <div class="filters" id="filters"></div>
+    <div id="list" class="list"></div>
+  </section>
+</main>
+
+<dialog id="addDialog">
+  <form method="dialog" id="addForm" class="add">
+    <h3>Yeni duyuru analiz et / ekle</h3>
+    <input id="addTitle" placeholder="Başlık">
+    <textarea id="addText" rows="6" placeholder="Duyuru metnini yapıştırın…"></textarea>
+    <div class="row">
+      <button type="button" id="analyzeBtn" class="secondary">Analiz et</button>
+      <button type="button" id="saveBtn">Kaydet</button>
+      <button value="cancel" class="ghost">Kapat</button>
+    </div>
+    <div id="analysis"></div>
+  </form>
+</dialog>
+
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
